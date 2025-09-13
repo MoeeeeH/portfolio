@@ -160,20 +160,18 @@ export default function Home() {
             </div>
           </div>
           <nav className="hidden md:flex space-x-1 md:space-x-6 animate-fadeIn" style={{ animationDelay: "0.2s" }}>
-            <button
-              onClick={() => setActiveTab("projects")}
-              className={`px-4 py-2 rounded-lg transition-all duration-300 relative overflow-hidden ${activeTab === "projects" ? "professional-gradient text-white" : "hover:text-[#81d4fa]"}`}
-            >
+            <Link href="#projects" className={`px-4 py-2 rounded-lg transition-all duration-300 relative overflow-hidden ${activeTab === "projects" ? "professional-gradient text-white" : "hover:text-[#81d4fa]"}`}>
               <span className="relative z-10">Projects</span>
               <div className="absolute inset-0 bg-[rgba(129, 212, 250, 0.1)] transform scale-x-0 transition-transform duration-300 origin-left"></div>
-            </button>
-            <button
-              onClick={() => setActiveTab("skills")}
-              className={`px-4 py-2 rounded-lg transition-all duration-300 relative overflow-hidden ${activeTab === "skills" ? "professional-gradient text-white" : "hover:text-[#81d4fa]"}`}
-            >
+            </Link>
+            <Link href="#skills" className={`px-4 py-2 rounded-lg transition-all duration-300 relative overflow-hidden ${activeTab === "skills" ? "professional-gradient text-white" : "hover:text-[#81d4fa]"}`}>
               <span className="relative z-10">Skills</span>
               <div className="absolute inset-0 bg-[rgba(129, 212, 250, 0.1)] transform scale-x-0 transition-transform duration-300 origin-left"></div>
-            </button>
+            </Link>
+            <Link href="#certifications" className={`px-4 py-2 rounded-lg transition-all duration-300 relative overflow-hidden ${activeTab === "certifications" ? "professional-gradient text-white" : "hover:text-[#81d4fa]"}`}>
+              <span className="relative z-10">Certifications</span>
+              <div className="absolute inset-0 bg-[rgba(129, 212, 250, 0.1)] transform scale-x-0 transition-transform duration-300 origin-left"></div>
+            </Link>
             <Link href="#contact" className={`px-4 py-2 rounded-lg transition-all duration-300 relative overflow-hidden ${activeTab === "contact" ? "professional-gradient text-white" : "hover:text-[#81d4fa]"}`}>
               <span className="relative z-10">Contact</span>
               <div className="absolute inset-0 bg-[rgba(129, 212, 250, 0.1)] transform scale-x-0 transition-transform duration-300 origin-left"></div>
