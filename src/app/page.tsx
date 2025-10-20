@@ -31,6 +31,13 @@ export default function Home() {
       technologies: ["Cowrie", "Dionaea", "Canarytokens", "SOAR", "Deception Technology"],
       status: "Completed",
     },
+    {
+      id: 4,
+      title: "Email Phishing Detector",
+      description: "Developing a machine learning-based system to identify phishing emails by analyzing content, headers, and URLs. Training model on real-world phishing datasets to achieve high detection accuracy.",
+      technologies: ["Python", "Machine Learning", "NLP", "TensorFlow", "Email Security"],
+      status: "In Progress",
+    },
   ];
 
   // Mock data for skills
@@ -196,7 +203,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fadeInUp" style={{ animationDelay: "0.4s" }}>
               <a href="#projects" className="btn-primary">View Projects</a>
-              <a href="#" className="btn-secondary">Download CV</a>
+              <a href="/CV.pdf" download className="btn-secondary">Download CV</a>
             </div>
           </div>
         </section>
@@ -266,11 +273,11 @@ export default function Home() {
               <p className="text-secondary max-w-3xl mx-auto mt-8 text-lg">Hands-on cybersecurity projects demonstrating practical skills and innovative solutions</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
               {projects.map((project, index) => (
                 <div
                   key={project.id}
-                  className="relative group overflow-hidden rounded-2xl border border-[rgba(0, 255, 255, 0.3)] bg-[rgba(0, 20, 40, 0.6)] backdrop-blur-lg animate-fadeInUp transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-[rgba(0, 255, 255, 0.2)]"
+                  className={`relative group overflow-hidden rounded-2xl border border-[rgba(0, 255, 255, 0.3)] bg-[rgba(0, 20, 40, 0.6)] backdrop-blur-lg animate-fadeInUp transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-[rgba(0, 255, 255, 0.2)] ${project.title === "Email Phishing Detector" ? "lg:col-start-2 mx-auto" : ""}`}
                   style={{
                     animationDelay: `${0.2 * (index + 1)}s`,
                     boxShadow: "0 0 20px rgba(0, 255, 255, 0.1), inset 0 0 20px rgba(0, 255, 255, 0.05)"
@@ -308,6 +315,11 @@ export default function Home() {
                         </Link>
                       ) : project.title === "Adversary Emulation Lab " ? (
                         <Link href="/adversary-emulation" className="text-[#81d4fa] hover:text-[#b3e5fc] transition-colors flex items-center text-sm font-medium">
+                          View Details
+                          <span className="ml-2">→</span>
+                        </Link>
+                      ) : project.title === "Email Phishing Detector" ? (
+                        <Link href="/email-phishing-detector" className="text-[#81d4fa] hover:text-[#b3e5fc] transition-colors flex items-center text-sm font-medium">
                           View Details
                           <span className="ml-2">→</span>
                         </Link>
