@@ -490,7 +490,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-r from-[rgba(0, 255, 255, 0)] via-[rgba(0, 255, 255, 0)] to-[rgba(0, 255, 255, 0)] group-hover:from-[rgba(0, 255, 255, 0.1)] group-hover:via-[rgba(0, 255, 255, 0.1)] group-hover:to-[rgba(0, 255, 255, 0.1)] transition-all duration-700"></div>
                   <div className="relative z-10 flex flex-col items-center text-center">
                     <h3 className="text-lg font-bold professional-text mb-2">Email</h3>
-                    <p className="text-secondary">mohamedh120802@gmail.com</p>
+                    <p className="text-secondary">s-mhass2@haw-landshut.de</p>
                   </div>
                 </div>
                 
