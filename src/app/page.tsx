@@ -194,7 +194,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fadeInUp" style={{ animationDelay: "0.4s" }}>
               <a href="#projects" className="btn-primary">View Projects</a>
-              <a href="/CV.pdf" download className="btn-secondary">Download CV</a>
+              <a href="https://drive.google.com/uc?export=download&id=1PXDAgDulEnWk5WXWNSiROvxMHb4YTDXb" download className="btn-secondary">Download CV</a>
             </div>
           </div>
         </section>
