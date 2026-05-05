@@ -36,7 +36,7 @@ export default function Home() {
       title: "Email Phishing Detector",
       description: "Developing a machine learning-based system to identify phishing emails by analyzing content, headers, and URLs. Training model on real-world phishing datasets to achieve high detection accuracy.",
       technologies: ["Python", "Machine Learning", "NLP", "TensorFlow", "Email Security"],
-      status: "In Progress",
+      status: "Completed",
     },
   ];
 
@@ -310,7 +310,7 @@ export default function Home() {
                           <span className="ml-2">→</span>
                         </Link>
                       ) : project.title === "Email Phishing Detector" ? (
-                        <Link href="/email-phishing-detector" className="text-[#81d4fa] hover:text-[#b3e5fc] transition-colors flex items-center text-sm font-medium">
+                        <Link href="/phishing-detector-details" className="text-[#81d4fa] hover:text-[#b3e5fc] transition-colors flex items-center text-sm font-medium">
                           View Details
                           <span className="ml-2">→</span>
                         </Link>
